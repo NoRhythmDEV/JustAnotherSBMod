@@ -1,0 +1,23 @@
+name: GitHub release
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 25
+      - name: Build and test
+        run: bash ./gradlew build --no-daemon
+      - name: Create release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          VERSION=$(sed -n 's/^mod_version=//p' gradle.properties | tr -d '\r')
+          gh release create "v$VERSION" "build/libs/JustAnotherSBMod-$VERSION.jar" \
+            --target "$GITHUB_SHA" --title "JustAnotherSBMod $VERSION" --generate-notes

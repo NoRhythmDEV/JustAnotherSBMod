@@ -1,0 +1,17 @@
+{
+  "key.category.multi-key-bindings.visitor_waypoints": "JustAnotherSBMod",
+  "key.multi-key-bindings.visitor_requirements": "Show Visitor Requirements",
+  "key.multi-key-bindings.visitor_browser": "Open Visitor Browser",
+  "key.multi-key-bindings.visitor_next_route": "Next Visitor Route",
+  "key.category.multi-key-bindings.toggles": "Toggles",
+  "multi.toggle.key.sneak": "Sneak Sticky Toggle",
+  "multi.toggle.key.sprint": "Sprint Sticky Toggle",
+  "multi.toggle.key.use": "Use/Place Sticky Toggle",
+  "multi.toggle.key.attack": "Attack/Destroy Sticky Toggle",
+  "multi.toggle.options.autoJump": "Auto-Jump Toggle",
+  "multi.toggle.state.on": "Toggle",
+  "multi.toggle.state.off": "Hold",
+  "multi.binding.mode.hold": "Hold",
+  "multi.binding.mode.toggle": "Toggle",
+  "multi.binding.mode.tooltip": "Hold follows the physical key. Toggle stays held until pressed again or Minecraft resets input."
+}

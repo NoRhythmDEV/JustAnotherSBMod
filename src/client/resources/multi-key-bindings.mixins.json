@@ -1,0 +1,22 @@
+{
+  "required": true,
+  "package": "us.kenny.mixin",
+  "compatibilityLevel": "JAVA_25",
+  "client": [
+    "ChestParticlePacketMixin",
+    "AbstractButtonMixin",
+    "KeyBindsListAccessor",
+    "KeyBindsListEntryAccessor",
+    "KeyMappingAccessor",
+    "KeyBindsListEntryMixin",
+    "KeyBindsListMixin",
+    "KeyBindsScreenMixin",
+    "KeyboardHandlerMixin",
+    "KeyMappingMixin",
+    "OptionsMixin",
+    "ToggleKeyMappingAccessor"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
