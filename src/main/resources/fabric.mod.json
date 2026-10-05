@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "id": "multi-key-bindings",
+  "id": "justanothersbmod",
   "version": "${version}",
   "name": "JustAnotherSBMod",
-  "description": "Configurable farming, mining, and keybinding helpers for Hypixel SkyBlock.",
+  "description": "Configurable farming and mining helpers for Hypixel SkyBlock.",
   "authors": [
     "NoRhythmDEV"
   ],
@@ -12,25 +12,19 @@
     "sources": "https://github.com/NoRhythmDEV/JustAnotherSBMod",
     "issues": "https://github.com/NoRhythmDEV/JustAnotherSBMod/issues"
   },
-  "license": "GPL-3.0-only",
-  "icon": "assets/multi-key-bindings/icon.png",
   "environment": "client",
   "entrypoints": {
     "client": [
-      "us.kenny.MultiKeyBindingClient"
+      "dev.norhythm.justanothersbmod.JustAnotherSBModClient"
     ]
   },
   "mixins": [
     {
-      "config": "multi-key-bindings.controlling.mixins.json",
-      "environment": "client"
-    },
-    {
-      "config": "multi-key-bindings.mixins.json",
+      "config": "justanothersbmod.mixins.json",
       "environment": "client"
     }
   ],
-  "accessWidener": "multi-key-bindings.accesswidener",
+  "accessWidener": "justanothersbmod.accesswidener",
   "depends": {
     "fabricloader": ">=0.19.3",
     "minecraft": "~26.2",

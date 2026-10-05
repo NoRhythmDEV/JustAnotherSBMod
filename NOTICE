@@ -1,11 +1,16 @@
-JustAnotherSBMod
-Developed and maintained by NoRhythmDEV.
+Bundled libraries
 
-The keybinding subsystem contains code originally developed by kennybc for
-Multi Key Bindings (https://github.com/kennybc/multi-key-bindings), distributed
-under GPL-3.0-only. Original code remains subject to that license; the license
-text is included in LICENSE.
+MoulConfig 4.7.2: Copyright NotEnoughUpdates contributors, LGPL-3.0-or-later.
+Source: https://github.com/NotEnoughUpdates/MoulConfig
+Versioned sources: https://maven.notenoughupdates.org/releases/org/notenoughupdates/moulconfig/modern-26.2/4.7.2/modern-26.2-4.7.2-sources.jar
+The library is shaded with package relocation only. Replace its dependency in
+build.gradle and rebuild to link with a modified version. LGPL and GPL texts are
+provided in licenses/ and apply to this component.
 
-This modified project adds SkyBlock farming and mining helpers, feature
-configuration, command modules, automatic config migration, and other changes.
-Modified by NoRhythmDEV, 2026-10-05.
+LibNinePatch 1.2.0 (bundled within MoulConfig): Juuz, MPL-2.0.
+Source: https://github.com/Juuxel/LibNinePatch
+License text: licenses/LibNinePatch-MPL-2.0.txt
+
+Hypixel Mod API 1.0.4+26.2: AzureAaron and contributors, Apache-2.0.
+Source: https://github.com/AzureAaron/hm-api
+Its original license and notices remain inside the nested hm-api jar.

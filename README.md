@@ -2,7 +2,7 @@
 
 [GitHub](https://github.com/NoRhythmDEV/JustAnotherSBMod)
 
-**Farming, mining, and keybinding helpers for Minecraft 26.2 / Fabric.**
+**Farming and mining helpers for Minecraft 26.2 / Fabric.**
 
 ### Settings
 
@@ -10,12 +10,11 @@ Run `/jasbm` or `/jasbm config` to open the MoulConfig menu. It has
 three root categories with feature subentries. `/justanothersbmod` and the legacy
 `/farmthingy` command also work:
 
-- **Farming:** Visitor Waypoints, Visitor Route, and Hold / Toggle.
+- **Farming:** Visitor Waypoints and Visitor Route.
 - **Mining:** Powder Chest Particles.
-- **Misc:** Keybindings and Interface.
+- **Misc:** Interface.
 
-Feature settings are saved in `config/justanothersbmod.json`. Existing bindings and
-profile unlock state remain in their existing files. Previous route, event, and
+Feature settings are saved in `config/justanothersbmod.json`. Profile unlock state remains in its existing file. Previous route, event, and
 mayor settings are imported automatically when the feature config is created.
 
 Feature configs migrate automatically from older names such as `farmthingy.json`,
@@ -28,8 +27,7 @@ Original files are retained. An invalid current config is backed up as
 `justanothersbmod.json.invalid-<id>.bak` before recovery or defaults are written.
 If preservation or migration fails, saving is disabled for that session to
 protect existing files. Unknown settings are retained across saves, and older
-visitor flags only fill missing feature settings. Bindings and visitor profile
-state continue using their existing files.
+visitor flags only fill missing feature settings. Visitor profile state continues using its existing file.
 
 ### Powder Chest Particles
 
@@ -56,24 +54,6 @@ place two separate nearby chests, and send `minecraft:crit` particles with
 `/particle` at different side coordinates. Check focused/all-chest modes, moving
 targets, back-side visibility, colors, expiry, and feature toggles. Restore the
 island restriction before normal SkyBlock use.
-
-This mod adds extra functionality to the native key binds screen. Simply click the "+" button next to any key binding and a new binding for the selected action should appear.
-This mod also adds support for modifier keys (left/right) shift, control, and alt.
-
-Each added alternative binding has its own **Hold/Toggle** button. In Hold mode,
-the action follows the physical key as usual. In Toggle mode, pressing the
-binding once keeps the action logically held and pressing it again releases it.
-For example, Attack/Destroy can keep Right Click as a normal alternative while
-Control independently toggles Attack/Destroy held on and off.
-
-Like Minecraft's own held-key state, an active direct toggle is safely released
-when the game resets input (for example, when focus is lost or a screen opens).
-
-Direct toggles only drive Minecraft's normal local key-mapping state and do not
-send custom action packets. Servers can still observe the resulting normal
-gameplay actions, so their rules on toggles/macros still apply. The visitor
-waypoint feature only subscribes to the official Hypixel Mod API location update
-so it can keep waypoints on the correct island.
 
 ### Garden Visitor Waypoints (26.2)
 
@@ -130,17 +110,11 @@ Blooming Business perk. Visitors without any fixed NPC coordinate remain absent.
 
 ## Compatibility
 
-Targets Minecraft 26.2 with Fabric and Java 25. Modifier chords and alternative
-keybindings can be configured in Minecraft's Controls menu. Controlling integration
-is optional; its compile-time dependencies are downloaded through Gradle.
-
-## License
-
-GPL-3.0-only. See [LICENSE](LICENSE) and [NOTICE](NOTICE) for retained component notices.
+Targets Minecraft 26.2 with Fabric and Java 25.
 
 ## Adding commands
 
-Client command registration lives in `us.kenny.commands.JustAnotherSBModCommands`.
+Client command registration lives in `dev.norhythm.justanothersbmod.commands.JustAnotherSBModCommands`.
 Feature modules attach their menu action and subcommands to a root builder.
 Add an independent command prefix with:
 

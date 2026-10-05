@@ -1,0 +1,11 @@
+{
+  "required": true,
+  "package": "dev.norhythm.justanothersbmod.mixin",
+  "compatibilityLevel": "JAVA_25",
+  "client": [
+    "ChestParticlePacketMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
