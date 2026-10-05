@@ -4,8 +4,7 @@ Developed and maintained by NoRhythmDEV.
 The keybinding subsystem contains code originally developed by kennybc for
 Multi Key Bindings (https://github.com/kennybc/multi-key-bindings), distributed
 under GPL-3.0-only. Original code remains subject to that license; the license
-text is included in LICENSE. These notices do not designate the original author
-as a contributor to the current project's new development.
+text is included in LICENSE.
 
 This modified project adds SkyBlock farming and mining helpers, feature
 configuration, command modules, automatic config migration, and other changes.
